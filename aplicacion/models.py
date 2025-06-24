@@ -9,7 +9,7 @@ class Area(models.Model):
 
 
     def __str__(self):
-        return {self.nombre}
+        return f"{self.nombre}"
 
 
 class Espacio_Fisico(models.Model):
@@ -31,7 +31,7 @@ class Entrenador(models.Model):
 
 
     def __str__(self):
-        return {self.nombre}
+        return f"{self.nombre}"
 
 class Actividad(models.Model):
     tipo_Actividad = models.CharField(max_length=100)
@@ -40,7 +40,7 @@ class Actividad(models.Model):
     entrenador = models.ForeignKey(Entrenador, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.nombre
+        return f"{self.nombre}"
 
 class Evento(models.Model):
     nombre = models.CharField(max_length=200)
