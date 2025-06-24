@@ -36,8 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'core.core',  # Assuming your app is named 'core'
+    'django.contrib.staticfiles', # Assuming your app is named 'core'
     'aplicacion',  # Your application where models are defined
 ]
 
